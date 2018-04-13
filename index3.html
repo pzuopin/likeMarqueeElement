@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery无缝滚动插件liMarquee演示-向上滚动_sucaihuo</title>
+<link rel="stylesheet" href="css/liMarquee.css">
+<style>
+.sucaihuo { width: 790px; height: 200px; margin: 100px auto; font-size: 14px;}
+.sucaihuo ul { margin: 0; line-height: 30px;}
+.sucaihuo a { color: #333; text-decoration: none;}
+.sucaihuo a:hover { text-decoration: underline;}
+</style>
+</head>
+
+<body>
+<h1>向上滚动</h1>
+
+<div class="sucaihuo">
+	<ul>
+	<li><a href="#">jQuery+Ajax实现排序效果</a></li>
+<li><a href="#">JS+COOKIE+JSON记录用户浏览过的文章</a></li>
+<li><a href="#">Hero Slider全屏焦点轮播动画效果</a></li>
+<li><a href="#">Smoothslides会移动的焦点轮播图</a></li>
+<li><a href="#">jQuery操作iframe三种演示方法</a></li>
+<li><a href="#">jQuery鼠标滑动导航菜单</a></li>
+<li><a href="#">jQuery垂直二级导航菜单代码</a></li>
+<li><a href="#">二级下拉渐变菜单导航</a></li>
+<li><a href="#">jQuery商城多级分类导航菜单</a></li>
+<li><a href="#">jQuery仿qq浏览器动画切换导航效果</a></li>
+
+	</ul>
+</div>
+<div class="menu">
+	<a class="cur" href="index.html">1、默认效果</a>
+	<a href="index2.html">2、向右滚动</a>
+	<a href="index3.html">3、向上滚动</a>
+	<a href="index4.html">4、向下滚动</a>
+	<a href="index5.html">5、滚动速度</a>
+	<a href="index6.html">6、非无缝滚动</a>
+	<a href="index7.html">7、禁止拖动</a>
+	<a href="index8.html">8、内容不足不滚动</a>
+	<a href="index9.html">9、鼠标悬停不暂停</a>
+	<a href="index10.html">10、反向</a>
+	<a href="index11.html">11、自定义事件</a>
+	<a href="index12.html">12、图片演示</a>
+</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+<script>
+$(function(){
+	$('.sucaihuo').liMarquee({
+		direction: 'up'
+	});
+});
+</script>
+
+
+
+</body>
+</html>

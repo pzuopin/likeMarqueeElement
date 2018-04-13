@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery无缝滚动插件liMarquee演示-非无缝滚动_sucaihuo</title>
+<link rel="stylesheet" href="css/liMarquee.css">
+<style>
+.sucaihuo { width: 790px; margin: 150px auto; font-size: 14px;}
+.sucaihuo a { margin: 0 15px; color: #333; text-decoration: none;}
+.sucaihuo a:hover { text-decoration: underline;}
+</style>
+</head>
+
+<body>
+<h1>非无缝滚动</h1>
+
+<div class="sucaihuo">
+	<a href="#">jQuery+rotate仿QQ音乐抽奖转盘</a>
+<a href="#">ideal+image+slider适合手机端的纯JS幻灯片</a>
+<a href="#">Simpler Sidebar简单的 jQuery侧边栏插件</a>
+<a href="#">Ion.Calendar - jQuery漂亮的日期插件</a>
+<a href="#">ck-slide淡入淡出效果的图片轮播插件</a>
+
+</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+<script>
+$(function(){
+	$('.sucaihuo').liMarquee({
+		circular: false
+	});
+});
+</script>
+<div class="menu">
+	<a href="index.html">1、默认效果</a>
+	<a href="index2.html">2、向右滚动</a>
+	<a href="index3.html">3、向上滚动</a>
+	<a href="index4.html">4、向下滚动</a>
+	<a href="index5.html">5、滚动速度</a>
+	<a class="cur" href="index6.html">6、非无缝滚动</a>
+	<a href="index7.html">7、禁止拖动</a>
+	<a href="index8.html">8、内容不足不滚动</a>
+	<a href="index9.html">9、鼠标悬停不暂停</a>
+	<a href="index10.html">10、反向</a>
+	<a href="index11.html">11、自定义事件</a>
+	<a href="index12.html">12、图片演示</a>
+</div>
+
+</body>
+</html>
